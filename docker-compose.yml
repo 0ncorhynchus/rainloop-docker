@@ -4,5 +4,7 @@ services:
     build: .
     logging:
       driver: journald
+    ports:
+      - "8888:80"
     volumes:
       - /srv/rainloop:/var/www/html/data
