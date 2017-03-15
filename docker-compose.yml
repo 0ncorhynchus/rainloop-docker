@@ -1,0 +1,8 @@
+version: '2'
+services:
+  rainloop:
+    build: .
+    logging:
+      driver: journald
+    volumes:
+      - /srv/rainloop:/var/www/html/data
